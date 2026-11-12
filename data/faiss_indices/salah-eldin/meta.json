@@ -1,0 +1,9 @@
+{
+  "character": "صلاح الدين الأيوبي",
+  "wikipedia_title": "صلاح الدين الأيوبي",
+  "url": "https://ar.wikipedia.org/wiki/%D8%B5%D9%84%D8%A7%D8%AD_%D8%A7%D9%84%D8%AF%D9%8A%D9%86_%D8%A7%D9%84%D8%A3%D9%8A%D9%88%D8%A8%D9%8A",
+  "revision": 77156076,
+  "chunks": 124,
+  "embedding_model": "silma-ai/silma-embedding-matryoshka-v0.1",
+  "built_at": "2026-11-10T10:26:59+00:00"
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Historical Characters">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3d67a"/>
+      <stop offset="1" stop-color="#b8862b"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#14152b"/>
+  <!-- eight-pointed star (khatam) -->
+  <g fill="none" stroke="url(#g)" stroke-width="3" stroke-linejoin="round">
+    <rect x="16" y="16" width="32" height="32"/>
+    <rect x="16" y="16" width="32" height="32" transform="rotate(45 32 32)"/>
+  </g>
+  <circle cx="32" cy="32" r="7" fill="url(#g)"/>
+</svg>

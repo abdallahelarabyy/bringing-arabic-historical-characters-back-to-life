@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About · Arabic Historical Characters</title>
+    <meta
+      name="description"
+      content="Why we built Arabic Historical Characters, what it aims to achieve, and the technology behind it."
+    />
+    <meta name="theme-color" content="#0e0f1f" />
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.svg" alt="" width="36" height="36" />
+          <span>Historical Characters</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false">
+          <span class="visually-hidden">Menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#characters">Characters</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">About the project</span>
+          <h1>Learning History by <span class="gold-text">Talking to It</span></h1>
+          <p>
+            A graduation project that turns history lessons into conversations: students ask, and historical
+            figures answer in their own voice.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 32px">
+        <div class="container prose-grid">
+          <article class="panel reveal">
+            <h2>Our Vision</h2>
+            <p>
+              Traditional history lessons ask students to read and memorise. We wanted to make learning about
+              historical figures interactive and memorable.
+            </p>
+            <p>
+              Instead of searching through long texts, a student can ask Salah El-Din Al-Ayyubi or Muhammad Ali
+              Pasha directly, follow up on what is unclear, and fill their own knowledge gaps.
+            </p>
+          </article>
+
+          <article class="panel reveal">
+            <h2>Our Mission</h2>
+            <p>
+              To make historical learning more accessible, interactive and engaging, so that history sparks
+              curiosity instead of feeling like a list of dates.
+            </p>
+            <p>
+              By combining retrieval-augmented AI with 3D avatars and Arabic speech, the project bridges the gap
+              between past and present and turns passive reading into active dialogue.
+            </p>
+          </article>
+
+          <article class="panel reveal">
+            <h2>What Students Gain</h2>
+            <ul class="check-list">
+              <li>Real-time conversations that make lessons engaging</li>
+              <li>Answers to their own questions, not only the textbook's</li>
+              <li>Better retention through conversation and storytelling</li>
+              <li>Sources for every answer, to read further and check facts</li>
+              <li>Spoken Arabic practice through voice questions and answers</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal">
+            <h2>Project Impact</h2>
+            <ul class="check-list">
+              <li>Makes historical education more engaging and interactive</li>
+              <li>Helps students remember through conversational learning</li>
+              <li>Gives each student a personalised learning experience</li>
+              <li>Bridges traditional textbooks and modern technology</li>
+              <li>Inspires a new generation to learn from history</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="kicker">Technology</span>
+            <h2>How It Is Built</h2>
+            <p>An open, reproducible stack. Everything runs on free services.</p>
+          </div>
+
+          <div class="panel reveal">
+            <table class="tech-table">
+              <tbody>
+                <tr><th scope="row">Backend</th><td>Python, FastAPI, served with Uvicorn or Docker</td></tr>
+                <tr><th scope="row">Knowledge source</th><td>Arabic Wikipedia, downloaded through the MediaWiki API and split by section</td></tr>
+                <tr><th scope="row">Retrieval (RAG)</th><td>SILMA Arabic sentence embeddings and a FAISS vector index, built with LangChain</td></tr>
+                <tr><th scope="row">Answers</th><td>Free Groq API (Qwen 3.8, GPT-OSS, ALLaM) or Google Gemini, prompted to answer in the first person, in character and fully vowelled</td></tr>
+                <tr><th scope="row">Speech</th><td>Microsoft Edge neural Arabic voices with word timings (ElevenLabs optional); speech recognition in the browser</td></tr>
+                <tr><th scope="row">3D avatar</th><td>TalkingHead (Three.js) with a custom Arabic lip-sync module that maps Arabic letters and vowels directly to mouth shapes</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="note reveal">
+            The characters are AI simulations built from encyclopedia text. They can make mistakes or simplify
+            events, so treat answers as a starting point and check the linked sources.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="cta reveal">
+            <h2>Ready to ask your first question?</h2>
+            <p>Salah El-Din and Muhammad Ali Pasha are waiting.</p>
+            <a class="btn btn-primary" href="index.html#characters">Meet the characters</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <a class="brand" href="index.html">
+            <img src="assets/img/logo.svg" alt="" width="36" height="36" />
+            <span>Historical Characters</span>
+          </a>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#characters">Characters</a></li>
+            <li><a href="index.html#how-it-works">How it works</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <p class="footer-note">
+          © <span id="year">2025</span> Arabic Historical Characters · Graduation project. Historical content
+          is based on Arabic Wikipedia (CC BY-SA 4.0). AI answers can contain mistakes, so check the linked sources.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js" defer></script>
+  </body>
+</html>

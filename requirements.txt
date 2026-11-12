@@ -1,0 +1,13 @@
+# Tested with Python 3.10 on Windows (2026-11-10).
+# For a smaller CPU-only PyTorch install first:  pip install torch --index-url https://download.pytorch.org/whl/cpu
+fastapi>=0.115
+uvicorn>=0.30
+python-dotenv>=1.0
+requests>=2.31
+edge-tts>=7.0
+langchain-core>=0.3,<2
+langchain-community>=0.3,<0.5
+langchain-text-splitters>=0.3,<2
+langchain-huggingface>=0.1,<2
+sentence-transformers>=3.0
+faiss-cpu>=1.8

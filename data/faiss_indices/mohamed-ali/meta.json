@@ -1,0 +1,9 @@
+{
+  "character": "محمد علي باشا",
+  "wikipedia_title": "محمد علي باشا",
+  "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AD%D9%85%D8%AF_%D8%B9%D9%84%D9%8A_%D8%A8%D8%A7%D8%B4%D8%A7",
+  "revision": 76479671,
+  "chunks": 98,
+  "embedding_model": "silma-ai/silma-embedding-matryoshka-v0.1",
+  "built_at": "2026-11-10T10:27:12+00:00"
+}

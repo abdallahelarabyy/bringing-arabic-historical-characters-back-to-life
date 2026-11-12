@@ -1,0 +1,22 @@
+# secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# runtime data (per-visitor conversations, contact form messages);
+# data/faiss_indices/ is kept: the indexes are built once and shipped with the project
+data/conversations/
+
+# editors
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+__MACOSX/
+Thumbs.db
